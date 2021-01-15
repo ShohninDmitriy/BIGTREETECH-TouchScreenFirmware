@@ -26,7 +26,7 @@
  *
  * Options: [2400: 0, 9600: 1, 19200: 2, 38400: 3, 57600: 4, 115200: 5, 250000: 6, 500000: 7, 1000000: 8]
  */
-#define BAUDRATE 5 // Default: 5
+#define BAUDRATE 4 // Default: 5
 
 /**
  * Default Primary Language (for Touch-Mode only)
@@ -41,7 +41,7 @@
  *          HUNGARIAN, TURKISH, GREEK, SLOVENIAN, CATALAN, TRAD_CHINESE,
  *          UKRAINIAN
  */
-#define DEFAULT_LANGUAGE ENGLISH // Default: ENGLISH
+#define DEFAULT_LANGUAGE RUSSIAN // Default: ENGLISH
 
 /**
  * Default Touch Mode Color Options
@@ -128,7 +128,7 @@
  * To work with RepRapFirmware, Add M575 P1 S2 B115200 to the end of config.g file in RRF motherboard
  * sd card.
 */
-//#define RepRapFirmware
+#define RepRapFirmware
 
 #define HOTEND_NUM      1  // set in 1~6
 #define EXTRUDER_NUM    1  // set in 1~6
@@ -177,22 +177,22 @@
 #define SPEED_XY_FAST   5000
 
 // Default Z speed (mm/min)
-#define SPEED_Z_SLOW   500
-#define SPEED_Z_NORMAL 1000
-#define SPEED_Z_FAST   2000
+#define SPEED_Z_SLOW   60
+#define SPEED_Z_NORMAL 300
+#define SPEED_Z_FAST   900
 
 // Extrude speed (mm/min)
 #define EXTRUDE_SLOW_SPEED     60
-#define EXTRUDE_NORMAL_SPEED  600
-#define EXTRUDE_FAST_SPEED   1200
+#define EXTRUDE_NORMAL_SPEED  240
+#define EXTRUDE_FAST_SPEED    600
 
 // Size of machine
 #define X_MIN_POS   0
 #define Y_MIN_POS   0
 #define Z_MIN_POS   0
-#define X_MAX_POS 235
-#define Y_MAX_POS 235
-#define Z_MAX_POS 250
+#define X_MAX_POS 385
+#define Y_MAX_POS 285
+#define Z_MAX_POS 290
 
 // Pause Settings
 #define NOZZLE_PAUSE_RETRACT_LENGTH               15  // (mm)
