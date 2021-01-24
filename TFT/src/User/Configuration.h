@@ -341,7 +341,7 @@
  *           6: 50 Percent,   7: 60 Percent,  8: 70 Percent,
  *           9: 80 Percent,  10: 90 Percent, 11: 100 Percent
  */
-#define DEFAULT_LCD_BRIGHTNESS       11  // Default: 11
+#define DEFAULT_LCD_BRIGHTNESS       10  // Default: 11
 #define DEFAULT_LCD_IDLE_BRIGHTNESS   3  // Default: 3
 
 /**
@@ -506,8 +506,8 @@
 #define CUSTOM_4_GCODE "M500\n"
 #define CUSTOM_5_LABEL "Restore from EEPROM"
 #define CUSTOM_5_GCODE "M501\n"
-#define CUSTOM_6_LABEL "EEPROM Defaults"
-#define CUSTOM_6_GCODE "M502\n"
+//#define CUSTOM_6_LABEL "EEPROM Defaults"
+//#define CUSTOM_6_GCODE "M502\n"
 //#define CUSTOM_7_LABEL "Custom7"
 //#define CUSTOM_7_GCODE "M105\n"
 //#define CUSTOM_8_LABEL "Custom8"
