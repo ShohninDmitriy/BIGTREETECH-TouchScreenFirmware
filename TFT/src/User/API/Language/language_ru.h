@@ -342,7 +342,8 @@
     #define STRING_NO_FILAMENT_STATS      "\nДанные о прутке отсутствуют."
     #define STRING_CLICK_FOR_MORE         "Нажмите для получения сводки"
     #define STRING_EXT_TEMPLOW            "Температура сопла ниже\nминимальной (%d℃)."
-    #define STRING_HEAT_HOTEND            "Нагрев сопла до %d℃?"
-    #define STRING_Z_ALIGN                "Z Выравнивание"
+    #define STRING_HEAT_HOTEND            "Heat hotend to %d℃?"
+    #define STRING_Z_ALIGN                "Z Align"
+    #define STRING_MACROS                 "Macros"
 
 #endif
