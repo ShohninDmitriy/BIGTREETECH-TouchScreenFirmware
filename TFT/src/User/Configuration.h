@@ -151,7 +151,7 @@
 #define EXTRUDER_ID      {"E0",   "E1",      "E2",      "E3",      "E4",      "E5"}
 
 // Prevent extrusion if the temperature is below set temperature
-#define PREVENT_COLD_EXTRUSION_MINTEMP 180
+#define PREVENT_COLD_EXTRUSION_MINTEMP 170
 
 /**
  * Fan control & Fan type Options:
@@ -190,8 +190,8 @@
 #define X_MIN_POS   0
 #define Y_MIN_POS   0
 #define Z_MIN_POS   0
-#define X_MAX_POS 385
-#define Y_MAX_POS 285
+#define X_MAX_POS 380
+#define Y_MAX_POS 280
 #define Z_MAX_POS 290
 
 /**
@@ -526,8 +526,8 @@
 #define CUSTOM_3_GCODE "M420 S1\n"
 #define CUSTOM_4_LABEL "Save to EEPROM"
 #define CUSTOM_4_GCODE "M500\n"
-#define CUSTOM_5_LABEL "Restore from EEPROM"
-#define CUSTOM_5_GCODE "M501\n"
+//#define CUSTOM_5_LABEL "Restore from EEPROM"
+//#define CUSTOM_5_GCODE "M501\n"
 //#define CUSTOM_6_LABEL "EEPROM Defaults"
 //#define CUSTOM_6_GCODE "M502\n"
 //#define CUSTOM_7_LABEL "Custom7"
