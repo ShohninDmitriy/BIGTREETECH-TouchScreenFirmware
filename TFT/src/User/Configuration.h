@@ -44,7 +44,7 @@
  *
  * Options: [2400: 0, 9600: 1, 19200: 2, 38400: 3, 57600: 4, 115200: 5, 250000: 6, 500000: 7, 1000000: 8]
  */
-#define BAUDRATE 4 // Default: 5
+#define BAUDRATE 5  // Default: 5
 
 /**
  * Default Primary Language (for Touch-Mode only)
@@ -58,7 +58,7 @@
  *          SPANISH,    FRENCH,   PORTUGUESE,  ITALIAN,    POLISH,    SLOVAK,        DUTCH,
  *          HUNGARIAN,  TURKISH,  GREEK,       SLOVENIAN,  CATALAN,   TRAD_CHINESE,  UKRAINIAN
  */
-#define DEFAULT_LANGUAGE RUSSIAN // Default: ENGLISH
+#define DEFAULT_LANGUAGE ENGLISH  // Default: ENGLISH
 
 /**
  * Default Touch Mode Color Options
@@ -127,7 +127,7 @@
  *
  * Options: [0: Disabled, 1: Enabled]
  */
-#define SERIAL_ALWAYS_ON 1  // Default: 0
+#define SERIAL_ALWAYS_ON 0  // Default: 0
 
 /**
  * LCD/Touch Encoder
@@ -162,7 +162,7 @@
 #define EXTRUDER_ID {"E0", "E1", "E2", "E3", "E4", "E5"}
 
 // Prevent extrusion if the temperature is below set temperature
-#define PREVENT_COLD_EXTRUSION_MINTEMP 170
+#define PREVENT_COLD_EXTRUSION_MINTEMP 180
 
 /**
  * Cooling Fan & Controller Fan
@@ -187,22 +187,22 @@
 #define SPEED_XY_FAST   5000
 
 // Default Z speed (mm/min)
-#define SPEED_Z_SLOW   60
-#define SPEED_Z_NORMAL 300
-#define SPEED_Z_FAST   900
+#define SPEED_Z_SLOW   500
+#define SPEED_Z_NORMAL 1000
+#define SPEED_Z_FAST   2000
 
 // Extrude speed (mm/min)
 #define EXTRUDE_SLOW_SPEED     60
-#define EXTRUDE_NORMAL_SPEED  240
-#define EXTRUDE_FAST_SPEED    600
+#define EXTRUDE_NORMAL_SPEED  600
+#define EXTRUDE_FAST_SPEED   1200
 
 // Size of machine
 #define X_MIN_POS   0
 #define Y_MIN_POS   0
 #define Z_MIN_POS   0
-#define X_MAX_POS 380
-#define Y_MAX_POS 280
-#define Z_MAX_POS 290
+#define X_MAX_POS 235
+#define Y_MAX_POS 235
+#define Z_MAX_POS 250
 
 /**
  * Raised Z height for probing
@@ -388,7 +388,7 @@
  *          6: 50 Percent,   7: 60 Percent,   8: 70 Percent,
  *          9: 80 Percent,  10: 90 Percent,  11: 100 Percent
  */
-#define DEFAULT_LCD_BRIGHTNESS       10  // Default: 11
+#define DEFAULT_LCD_BRIGHTNESS       11  // Default: 11
 #define DEFAULT_LCD_IDLE_BRIGHTNESS   3  // Default: 3
 
 /**
@@ -565,10 +565,10 @@
 #define CUSTOM_3_GCODE "M420 S1\n"
 #define CUSTOM_4_LABEL "Save to EEPROM"
 #define CUSTOM_4_GCODE "M500\n"
-//#define CUSTOM_5_LABEL "Restore from EEPROM"
-//#define CUSTOM_5_GCODE "M501\n"
-//#define CUSTOM_6_LABEL "EEPROM Defaults"
-//#define CUSTOM_6_GCODE "M502\n"
+#define CUSTOM_5_LABEL "Restore from EEPROM"
+#define CUSTOM_5_GCODE "M501\n"
+#define CUSTOM_6_LABEL "EEPROM Defaults"
+#define CUSTOM_6_GCODE "M502\n"
 //#define CUSTOM_7_LABEL "Custom7"
 //#define CUSTOM_7_GCODE "M105\n"
 //#define CUSTOM_8_LABEL "Custom8"
