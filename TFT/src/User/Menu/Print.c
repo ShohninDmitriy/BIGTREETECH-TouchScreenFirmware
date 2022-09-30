@@ -51,7 +51,7 @@ const GUI_RECT gcodeRect[NUM_PER_PAGE] = {
 #endif
 };
 
-// error labels for files/Volume errors
+// error labels for files/volume errors
 const int16_t labelVolumeError[3] = {LABEL_TFT_SD_READ_ERROR, LABEL_TFT_USB_READ_ERROR, LABEL_ONBOARD_SD_READ_ERROR};
 
 static bool list_mode = true;
@@ -165,8 +165,7 @@ bool printPageItemSelected(uint16_t index)
       sprintf(temp_info, (char *)textSelect(LABEL_START_PRINT), (uint8_t *)(filename));  // display short or long filename
 
       // confirm file selction
-      setDialogText(LABEL_PRINT, (uint8_t *)temp_info, LABEL_CONFIRM, LABEL_CANCEL);
-      showDialog(DIALOG_TYPE_QUESTION, startPrint, exitFolder, NULL);
+      popupDialog(DIALOG_TYPE_QUESTION, LABEL_PRINT, (uint8_t *)temp_info, LABEL_CONFIRM, LABEL_CANCEL, startPrint, exitFolder, NULL);
 
       hasUpdate = false;
     }
